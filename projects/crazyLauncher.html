@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crazy Launcher - Application</title>
+    <script src="../js/project.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&family=Oxanium:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div id="customCursor"></div>
+  <div id="cursorTrail"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="project-layout">
+    <!-- LEFT -->
+    <aside class="project-left">
+      <a href="../index.html" class="back-btn">← Retour</a>
+
+      <span class="badge"><span>APPLICATIONS</span></span>
+      <h1>Crazy Launcher</h1>
+      <p class="subtitle">PC - Application</p>
+
+      <div class="meta">
+        <div><span>LANGAGES</span><strong>Qt / C++</strong></div>
+        <div><span>ÉQUIPE</span><strong>1</strong></div>
+        <div><span>DURÉE</span><strong>1 mois</strong></div>
+        <div><span>RÔLE</span><strong>Software Programmer</strong></div>
+      </div>
+
+      <p class="description">
+        Crazy Launcher est une application desktop développée en C++ avec Qt, conçue pour centraliser et lancer tous mes projets en un clic scripts, 
+        exécutables, projets Unity ou Unreal. Ce projet est né d'une envie simple : me créer une première expérience concrète avec Qt et explorer 
+        le workflow complet d'une application desktop. J'ai pu découvrir l'écosystème Qt, styliser l'interface en QSS, packager l'application avec 
+        Windeployqt et créer un installeur via CrazyInstaller.
+      </p>
+
+      <div class="tags">
+        <span>C++</span>
+        <span>Qt</span>
+      </div>
+
+      <div class="links">
+        <a href="https://github.com/Sayaka-Shen/CrazyLauncher" class="primary">Voir la démo</a>
+      </div>
+    </aside>
+
+    <!-- RIGHT -->
+    <main class="project-right">
+      <div class="preview-grid">
+        <div class="preview-video">
+          <img src="../assets/projects/crazyLauncher/ScreenApp.png" alt="Capture d'écran de l'application">
+        </div>
+        <div class="preview-video">
+          <img src="../assets/projects/crazyLauncher/ScreenAddNoSoftware.png" alt="Capture d'écran de la fenêtre d'ajout">
+        </div>
+        <div class="preview-video">
+          <img src="../assets/projects/crazyLauncher/ScreenAddWithSoftware.png" alt="Capture d'écran de la fenêtre d'édite">
+        </div>
+      </div>
+
+      <div class="contributions">
+        <div>
+          <h3>Features du Launcher</h3>
+            <p>
+              J'ai développé la gestion complète des projets: ajout, édition, suppression et recherche avec support de 7 types : exécutables, scripts, 
+              Unreal, Unity, Blender, Photoshop et un type personnalisable. J'ai également soigné l'interface via QSS et créé un installeur Windows pour le déploiement.
+            </p>
+        </div>
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>

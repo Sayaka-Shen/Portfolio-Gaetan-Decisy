@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>George The Sheekpkeeper - Puzzle Game</title>
+    <script src="../js/project.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&family=Oxanium:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div id="customCursor"></div>
+  <div id="cursorTrail"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="project-layout">
+    <!-- LEFT -->
+    <aside class="project-left">
+      <a href="../index.html" class="back-btn">← Retour</a>
+
+      <span class="badge"><span>JEU VIDÉO</span></span>
+      <h1>George The Sheekpkeeper</h1>
+      <p class="subtitle">PC - Puzzle Game</p>
+
+      <div class="meta">
+        <div><span>MOTEUR</span><strong>Unity C#</strong></div>
+        <div><span>ÉQUIPE</span><strong>5</strong></div>
+        <div><span>DURÉE</span><strong>1 week-end</strong></div>
+        <div><span>RÔLE</span><strong>Game Programmer</strong></div>
+      </div>
+
+      <p class="description">
+        Ramenez les moutons avant que le grand méchant loup ne les attrape ! Dans ce petit puzzle game, vous incarnez George, un courageux chien 
+        en peluche. Votre mission est simple : retrouver tous les moutons perdus... avant que le loup n'arrive !
+      </p>
+
+      <div class="tags">
+        <span>C#</span>
+        <span>Unity</span>
+      </div>
+
+      <div class="links">
+        <a href="https://github.com/Sayaka-Shen/GeorgeTheSheepkeeper">GitHub</a>
+        <a href="https://sheevsuke.itch.io/george-the-sheepkeeper" class="primary">Voir la démo</a>
+      </div>
+    </aside>
+
+    <!-- RIGHT -->
+    <main class="project-right">
+      <div class="preview-grid">
+        <div class="preview-video">
+          <video src="../assets/projects/georgeSheepkeeper/LudumDareTrailer.mp4" poster="../assets/banners/GeorgeTheSheepkeeper_Banner.png" 
+              controls preload="metadata" muted playsinline loop autoplay> 
+              Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+        </div>
+        <div class="preview-video">
+          <video src="../assets/projects/georgeSheepkeeper/George_Features.mp4" poster="../assets/banners/GeorgeTheSheepkeeper_Banner.png" 
+              controls preload="metadata" muted playsinline loop autoplay> 
+              Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+        </div>
+      </div>
+
+      <div class="contributions">
+        <div>
+          <h3>Système de pousser d'objet</h3>
+          <p>
+            J'ai implémenté la mécanique de poussée d'objets, cœur du gameplay. Le joueur pousse des caisses pour débloquer des passages, 
+            certaines uniquement accessibles une fois tous les moutons retrouvés.
+          </p>
+        </div>
+        <div>
+            <h3>Système d'intéraction</h3>
+            <p>
+              J'ai développé le système d'interaction permettant de récupérer les moutons un par un et d'activer des portes ou mécanismes, 
+              débloquant progressivement l'environnement.
+            </p>
+        </div>
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>

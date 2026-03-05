@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaëtan Decisy — Dev C++ / C#</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&family=Oxanium:wght@200;400;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Cursor -->
+    <div id="customCursor"></div>
+    <div id="cursorTrail"></div>
+
+    <!-- Particle background -->
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-logo">[<span>GAETAN</span>.DEV]</div>
+
+        <button class="nav-toggle" id="mobileMenuButton" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="mobileNavigation">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+        <p class="hero-tag">Développeur C++ · C# · Game Dev</p>
+
+        <h1 class="hero-name">
+            <span>Gaëtan</span>
+            <span class="hero-name-accent">
+                <span class="glitch-wrap" data-text="Decisy">Decisy</span>
+            </span>
+        </h1>
+
+        <p class="hero-title">Game Developer &amp; Software Engineer</p>
+
+        <div class="hero-badges">
+            <div class="badge active"><span>C++</span></div>
+            <div class="badge active"><span>C#</span></div>
+            <div class="badge"><span>Unity</span></div>
+            <div class="badge"><span>Unreal</span></div>
+            <div class="badge"><span>OpenGL</span></div>
+            <div class="badge"><span>Qt</span></div>
+            <div class="badge"><span>Javascript</span></div>
+            <div class="badge"><span>PHP</span></div>
+        </div>
+
+        <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary"><span>Voir mes projets</span></a>
+            <a href="#contact" class="btn btn-secondary"><span>Me contacter</span></a>
+        </div>
+    </section>
+
+    <div class="hex-divider"><span>◆</span></div>
+
+    <!-- About -->
+    <section id="about">
+        <p class="section-label reveal">À propos</p>
+        <h2 class="section-title reveal">Qui suis-je ?</h2>
+        <div class="section-line reveal"></div>
+
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <p>
+                    Je m'appelle Gaëtan Decisy, je suis étudiant français à l'IIM Digital School.
+                    Actuellement, j'étudie la <strong>programmation de jeux vidéo</strong>,
+                    en me concentrant plus particulièrement sur les aspects gameplay.
+                    Mes langages d'expertise sont <strong>le C++ et le C#</strong> et je m'en sers pour laisser ma créativité parler.
+                </p>
+                <p>
+                    Je suis passionné par le développement en général, et je trouve que la création d'un jeu
+                    est un processus créatif fascinant. Curieux de nature, j'apprécie particulièrement
+                    la <strong>programmation d'outils</strong>, la <strong>programmation moteur</strong>
+                    et la <strong>programmation d'application Windows</strong>.
+                    J'aime apprendre de nouvelles choses et explorer constamment de nouveaux domaines !
+                </p>
+            </div>
+
+            <div class="skills-grid reveal">
+                <div class="skill-item"><p class="skill-name">C++</p></div>
+                <div class="skill-item"><p class="skill-name">C#</p></div>
+                <div class="skill-item"><p class="skill-name">Unity</p></div>
+                <div class="skill-item"><p class="skill-name">Unreal Engine</p></div>
+                <div class="skill-item"><p class="skill-name">Qt</p></div>
+                <div class="skill-item"><p class="skill-name">OpenGL / GLSL</p></div>
+                <div class="skill-item"><p class="skill-name">Javascript</p></div>
+                <div class="skill-item"><p class="skill-name">PHP</p></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="hex-divider"><span>◆</span></div>
+
+    <!-- Projects -->
+    <section id="projects">
+        <p class="section-label reveal">Portfolio</p>
+        <h2 class="section-title reveal">Mes Projets</h2>
+        <div class="section-line reveal"></div>
+
+        <div class="projects-filter reveal">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="jeuxvideo">Jeux Vidéo</button>
+            <button class="filter-btn" data-filter="applications">Applications</button>
+        </div>
+
+        <div class="projects-grid">
+            <!-- The Undead Duet -->
+            <div class="project-card featured reveal" data-category="jeuxvideo">
+                <div class="project-thumb">
+                    <div class="project-thumb-inner"><img src="./assets/banners/TheUndeadDuet_Banner.gif" alt="The Undead Duet Banner"/></div>
+                    <span class="project-type-badge type-game">Jeu Vidéo</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Unreal</span>
+                    </div>
+                    <p class="project-title">The Undead Duet</p>
+                    <p class="project-info">3 mois - 16 personnes - PC - Couch Game</p>
+                    <p class="project-desc">
+                        Une forêt sinistre, deux musiciens improbables. Jouez, réanimez, et redonnez vie à ce qui ne devrait plus l'être.
+                    </p>
+                    <div class="project-links">
+                        <a href="./projects/theUndeadDuet.html" class="project-link">→ Voir le projet</a>
+                        <a href="https://github.com/dorgui00/Pipoumancien" class="project-link secondary">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crazy Launcher -->
+            <div class="project-card featured reveal" data-category="applications">
+                <div class="project-thumb">
+                    <div class="project-thumb-inner"><img src="./assets/banners/Launcher_Banner.png" alt="Crazy Launcher Banner"/></div>
+                    <span class="project-type-badge type-game">Applications</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Qt</span>
+                    </div>
+                    <p class="project-title">Crazy Launcher</p>
+                    <p class="project-info">1 mois - Solo - PC - Application</p>
+                    <p class="project-desc">
+                        Crazy Launcher est une application de bureau développée avec le framework Qt uniquement en C++, conçue pour centraliser et lancer 
+                        facilement tous vos projets depuis un seul endroit.
+                    </p>
+                    <div class="project-links">
+                        <a href="./projects/crazyLauncher.html" class="project-link">→ Voir le projet</a>
+                        <a href="https://github.com/Sayaka-Shen/CrazyLauncher" class="project-link secondary">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SeiSei -->
+            <div class="project-card featured reveal" data-category="jeuxvideo">
+                <div class="project-thumb">
+                    <div class="project-thumb-inner"><img src="./assets/banners/SeiSei_Banner.png" alt="Seisei Banner"/></div>
+                    <span class="project-type-badge type-game">Jeu Vidéo</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Unity</span>
+                    </div>
+                    <p class="project-title">SeiSei</p>
+                    <p class="project-info">1 mois - 9 personnes - Mobile - Puzzle</p>
+                    <p class="project-desc">
+                        Des âmes perdues vous attendent. Guidez-les vers la purification avant que la corruption ne les engloutisse, chaque seconde compte !
+                    </p>
+                    <div class="project-links">
+                        <a href="./projects/seisei.html" class="project-link">→ Voir le projet</a>
+                        <a href="https://github.com/Sayaka-Shen/SeiSei" class="project-link secondary">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DriveHard2099 -->
+            <div class="project-card featured reveal" data-category="jeuxvideo">
+                <div class="project-thumb">
+                    <div class="project-thumb-inner"><img src="./assets/banners/DriveHardBanner.png" alt="DriveHard2099 Banner"/></div>
+                    <span class="project-type-badge type-game">Jeu Vidéo</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-tag">Blueprint</span>
+                        <span class="tech-tag">Unreal</span>
+                    </div>
+                    <p class="project-title">Drive Hard 2099</p>
+                    <p class="project-info">1 mois - 9 personnes - PC - First Person</p>
+                    <p class="project-desc">
+                        Bienvenue à Sunset City. Deux joueurs, un véhicule, une arène. Sunset City ne pardonne pas les faibles !
+                    </p>
+                    <div class="project-links">
+                        <a href="./projects/driveHard.html" class="project-link">→ Voir le projet</a>
+                        <a href="https://github.com/Sayaka-Shen/DriveHard2099" class="project-link secondary">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- F.R.E.D -->
+            <div class="project-card featured reveal" data-category="jeuxvideo">
+                <div class="project-thumb">
+                    <div class="project-thumb-inner"><img src="./assets/banners/F.R.E.D_Banner.png" alt="F.R.E.D Banner"/></div>
+                    <span class="project-type-badge type-game">Jeu Vidéo</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Unity</span>
+                    </div>
+                    <p class="project-title">F.R.E.D</p>
+                    <p class="project-info">1 mois - 9 personnes - Mobile - Narrative Game</p>
+                    <p class="project-desc">
+                        Une photo cachée. Un ami prisonnier. Une machine qui vous ment. La vérité est là, quelque part entre les lignes de code.
+                    </p>
+                    <div class="project-links">
+                        <a href="./projects/fred.html" class="project-link">→ Voir le projet</a>
+                        <a href="https://github.com/Sayaka-Shen/F.R.E.D" class="project-link secondary">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cresentia -->
+            <div class="project-card featured reveal" data-category="jeuxvideo">
+                <div class="project-thumb">
+                    <div class="project-thumb-inner"><img src="./assets/banners/Cresentia_Banner.png" alt="Cresentia Banner"/></div>
+                    <span class="project-type-badge type-game">Jeu Vidéo</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-tag">Blueprint</span>
+                        <span class="tech-tag">Unreal</span>
+                    </div>
+                    <p class="project-title">Cresentia</p>
+                    <p class="project-info">1 semaine - 12 personnes - PC - First Person</p>
+                    <p class="project-desc">
+                        Vous vous réveillez. Vous ne savez pas où vous êtes. Et la porte devant vous... ne s'ouvre pas, elle bouge.
+                    </p>
+                    <div class="project-links">
+                        <a href="./projects/cresentia.html" class="project-link">→ Voir le projet</a>
+                        <a href="https://github.com/Sayaka-Shen/Cresentia" class="project-link secondary">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mo Curses -->
+            <div class="project-card featured reveal" data-category="jeuxvideo">
+                <div class="project-thumb">
+                    <div class="project-thumb-inner"><img src="./assets/banners/MoCurses_Banner.png" alt="Mo Curses Banner"/></div>
+                    <span class="project-type-badge type-game">Jeu Vidéo</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-tag">Lua</span>
+                        <span class="tech-tag">Typescript</span>
+                    </div>
+                    <p class="project-title">Mo Curses</p>
+                    <p class="project-info">1 mois - 2 personnes - PC - Modding</p>
+                    <p class="project-desc">
+                        Ce mod pour The Binding of Isaac introduit de nouvelles malédictions qui peuvent aider, handicaper, ou les deux à la fois renforçant la stratégie 
+                        et la rejouabilité tout en conservant l'ADN du jeu.
+                    </p>
+                    <div class="project-links">
+                        <a href="./projects/mocurse.html" class="project-link">→ Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lebon Labrute et Donjuan -->
+            <div class="project-card featured reveal" data-category="jeuxvideo">
+                <div class="project-thumb">
+                    <div class="project-thumb-inner"><img src="./assets/banners/BonBruteDonjuan_Banner.png" alt="Lebon Labrute et Donjuan Banner"/></div>
+                    <span class="project-type-badge type-game">Jeu Vidéo</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Unity</span>
+                    </div>
+                    <p class="project-title">Lebon Labrute et Donjuan</p>
+                    <p class="project-info">1 semaine - 4 personnes - PC - Narrative Game</p>
+                    <p class="project-desc">
+                        Levez-vous, brave écuyer. Trois chevaliers, un tournoi, et vous au milieu de tout ça. Que le meilleur gagne.
+                    </p>
+                    <div class="project-links">
+                        <a href="./projects/bonBruteDonjuan.html" class="project-link">→ Voir le projet</a>
+                        <a href="https://github.com/Sayaka-Shen/LeBonLaBruteEtDonjuan" class="project-link secondary">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- George The SheepKeeper -->
+            <div class="project-card featured reveal" data-category="jeuxvideo">
+                <div class="project-thumb">
+                    <div class="project-thumb-inner"><img src="./assets/banners/GeorgeTheSheepkeeper_Banner.png" alt="George The Sheepkeeper Banner"/></div>
+                    <span class="project-type-badge type-game">Jeu Vidéo</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Unity</span>
+                    </div>
+                    <p class="project-title">George The Sheepkeeper</p>
+                    <p class="project-info">1 week-end - 5 personnes - PC - Puzzle Game</p>
+                    <p class="project-desc">
+                        Des moutons perdus, un loup qui rôde, et George un courageux chien en peluche pour tout arranger. Le temps presse !
+                    </p>
+                    <div class="project-links">
+                        <a href="./projects/george.html" class="project-link">→ Voir le projet</a>
+                        <a href="https://github.com/Sayaka-Shen/GeorgeTheSheepkeeper" class="project-link secondary">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Scanner Lidar -->
+            <div class="project-card featured reveal" data-category="jeuxvideo">
+                <div class="project-thumb">
+                    <div class="project-thumb-inner"><img src="./assets/banners/LidarScanner_Banner.png" alt="Scanner Lidar Banner"/></div>
+                    <span class="project-type-badge type-game">Jeu Vidéo</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-tag">Blueprint</span>
+                        <span class="tech-tag">Unreal</span>
+                    </div>
+                    <p class="project-title">Scanner Lidar</p>
+                    <p class="project-info">1 jour - Solo - PC - Mécanique</p>
+                    <p class="project-desc">
+                        Vous vous réveillez. Vous ne savez pas où vous êtes. Et la porte devant vous... ne s'ouvre pas, elle bouge.
+                    </p>
+                    <div class="project-links">
+                        <a href="./projects/scannerLidar.html" class="project-link">→ Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crazy Engine -->
+            <div class="project-card featured reveal" data-category="applications">
+                <div class="project-thumb">
+                    <div class="project-thumb-inner"><img src="./assets/banners/Loading_Banner.png" alt="Loading Banner"/></div>
+                    <span class="project-type-badge type-game">Applications</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Open GL</span>
+                    </div>
+                    <p class="project-title">Crazy Engine</p>
+                    <p class="project-info">En cours - Solo - PC - Open GL</p>
+                    <p class="project-desc">
+                        Projet de moteur de jeux vidéo en cours de développement.
+                    </p>
+                    <div class="project-links">
+                        <a href="./projects/crazyEngine.html" class="project-link">→ Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="hex-divider"><span>◆</span></div>
+
+    <!-- Contact -->
+    <section id="contact">
+        <p class="section-label reveal">Contact</p>
+        <h2 class="section-title reveal">Me contacter</h2>
+        <div class="section-line reveal"></div>
+
+        <p class="contact-intro reveal">
+            Disponible pour des opportunités en développement de jeux vidéo, en développment d'application ou des projets freelance ou des collaborations passionnantes.
+        </p>
+
+        <div class="contact-links reveal">
+            <a href="mailto:gaetan.decisy6@hotmail.com" class="contact-link">
+                <span class="contact-link-icon">✉</span>
+                <div>
+                    <p class="contact-link-label">Email</p>
+                    <p class="contact-link-text">gaetan.decisy6@hotmail.com</p>
+                </div>
+            </a>
+
+            <a href="https://github.com/Sayaka-Shen" target="_blank" rel="noopener" class="contact-link">
+                <span class="contact-link-icon">⌥</span>
+                <div>
+                    <p class="contact-link-label">GitHub</p>
+                    <p class="contact-link-text">github.com/Sayaka-Shen</p>
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/gaetan-decisy/" target="_blank" rel="noopener" class="contact-link">
+                <span class="contact-link-icon">◈</span>
+                <div>
+                    <p class="contact-link-label">LinkedIn</p>
+                    <p class="contact-link-text">linkedin.com/in/gaetan-decisy</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Gaëtan Decisy</p>
+        <p>Built with <span>HTML · CSS · JS</span></p>
+    </footer>
+</body>
+</html>

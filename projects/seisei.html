@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeiSei - Mobile Game</title>
+    <script src="../js/project.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&family=Oxanium:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div id="customCursor"></div>
+  <div id="cursorTrail"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="project-layout">
+    <!-- LEFT -->
+    <aside class="project-left">
+      <a href="../index.html" class="back-btn">← Retour</a>
+
+      <span class="badge"><span>JEU VIDÉO</span></span>
+      <h1>SeiSei</h1>
+      <p class="subtitle">Mobile - Puzzle Game</p>
+
+      <div class="meta">
+        <div><span>MOTEUR</span><strong>Unity C#</strong></div>
+        <div><span>ÉQUIPE</span><strong>9</strong></div>
+        <div><span>DURÉE</span><strong>1 mois</strong></div>
+        <div><span>RÔLE</span><strong>Game Programmer</strong></div>
+      </div>
+
+      <p class="description">
+        Dans Seisei, un puzzle game 2D en vue top-down, vous incarnez un Gardien des Esprits chargé de guider des âmes perdues vers leur purification, 
+        avant qu'elles ne succombent à la corruption. Les âmes se dégradent avec le temps, ce qui oblige le joueur à optimiser ses déplacements, 
+        hiérarchiser ses actions et agir rapidement pour toutes les sauver.
+      </p>
+
+      <div class="tags">
+        <span>C#</span>
+        <span>Unity</span>
+      </div>
+
+      <div class="links">
+        <a href="https://github.com/Sayaka-Shen/SeiSei">GitHub</a>
+        <a href="https://adrien-mart.itch.io/seisei" class="primary">Voir la démo</a>
+      </div>
+    </aside>
+
+    <!-- RIGHT -->
+    <main class="project-right">
+      <div class="preview-grid">
+        <div class="preview-video">
+          <video src="../assets/projects/seisei/SeiSeiTrailer.mp4" poster="../assets/banners/SeiSei_Banner.png" 
+                controls preload="metadata" muted playsinline loop autoplay> 
+                Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+        </div>
+        <div class="preview-video">
+          <video src="../assets/projects/seisei/SeiSei_Features.mp4" poster="../assets/banners/SeiSei_Banner.png" 
+                controls preload="metadata" muted playsinline loop autoplay> 
+                Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+        </div>
+      </div>
+
+      <div class="contributions">
+        <div>
+          <h3>A* Pathfinding</h3>
+            <p>
+                J’ai développé un algorithme de pathfinding A* sur mesure, utilisé pour permettre à certaines âmes corrompues de poursuivre activement 
+                le joueur sur une carte en grille. Le système prend en compte les obstacles dynamiquement et permet des mises à jour en temps réel, 
+                assurant un comportement fluide et réactif.
+            </p>
+        </div>
+        <div>
+            <h3>Gameplay Feature</h3>
+            <p>
+                Durant ce projet, j'ai aussi effectué plusieurs Gameplay Features comme les portails, les rivières, les arêtes à sens unique, les pièges à âmes 
+                et les mécaniques de prise et de purification d'une âme. Ce sont des mécaniques de gameplay principales qui permettent d'avancer à travers les niveaux du jeu.
+            </p>
+        </div>
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>

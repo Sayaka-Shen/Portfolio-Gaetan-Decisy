@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mo Curses - Modding</title>
+    <script src="../js/project.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&family=Oxanium:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div id="customCursor"></div>
+  <div id="cursorTrail"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="project-layout">
+    <!-- LEFT -->
+    <aside class="project-left">
+      <a href="../index.html" class="back-btn">← Retour</a>
+
+      <span class="badge"><span>JEU VIDÉO</span></span>
+      <h1>Mo Curses</h1>
+      <p class="subtitle">PC - Modding</p>
+
+      <div class="meta">
+        <div><span>LANGAGES</span><strong>Lua / TypeScript</strong></div>
+        <div><span>ÉQUIPE</span><strong>2</strong></div>
+        <div><span>DURÉE</span><strong>1 mois</strong></div>
+        <div><span>RÔLE</span><strong>Game Programmer</strong></div>
+      </div>
+
+      <p class="description">
+        Ce mod pour The Binding of Isaac ajoute de nouvelles malédictions au jeu, avec une approche originale : certaines aident le joueur, tandis 
+        que d’autres viennent ralentir sa progression, ou les deux à la fois. Chaque malédiction modifie fortement la stratégie et offre une rejouabilité 
+        accrue, en conservant l’ADN du jeu original.
+      </p>
+
+      <div class="tags">
+        <span>Lua</span>
+        <span>Typescript</span>
+      </div>
+
+      <div class="links">
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3402479582" class="primary">Voir la démo</a>
+      </div>
+    </aside>
+
+    <!-- RIGHT -->
+    <main class="project-right">
+      <div class="preview-grid">
+        <div class="preview-video">
+           <video src="../assets/projects/moCurses/CompositionLouis.mp4" poster="../assets/banners/MoCurses_Banner.png" 
+              controls preload="metadata" muted playsinline loop autoplay> 
+              Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+        </div>
+      </div>
+
+      <div class="contributions">
+        <div>
+          <h3>Mécanique de Malédictions</h3>
+            <p>
+              J'ai développé l'ensemble des malédictions en Lua et TypeScript. Chaque malédiction repose sur un double effet qui force le joueur 
+              à adapter sa stratégie : dégâts doublés dans les deux sens, sacrifice de vie contre des bonus permanents, soins au prix d'objets 
+              perdus, économie de pièces chamboulée ou comportement des projectiles modifié.
+            </p>
+        </div>
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>

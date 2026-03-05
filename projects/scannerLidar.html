@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scanner Lidar - Mécanique</title>
+    <script src="../js/project.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&family=Oxanium:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div id="customCursor"></div>
+  <div id="cursorTrail"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="project-layout">
+    <!-- LEFT -->
+    <aside class="project-left">
+      <a href="../index.html" class="back-btn">← Retour</a>
+
+      <span class="badge"><span>JEU VIDÉO</span></span>
+      <h1>Scanner Lidar</h1>
+      <p class="subtitle">PC - Mécanique</p>
+
+      <div class="meta">
+        <div><span>MOTEUR</span><strong>Unreal Blueprint</strong></div>
+        <div><span>ÉQUIPE</span><strong>1</strong></div>
+        <div><span>DURÉE</span><strong>1 jour</strong></div>
+        <div><span>RÔLE</span><strong>Game Programmer</strong></div>
+      </div>
+
+      <p class="description">
+        Ce petit projet a été réalisé durant ma deuxième année à l’IIM Digital School, dans le cadre d’un exercice visant à expérimenter et développer 
+        des mécaniques de gameplay de manière autonome. C’était la première fois que j’utilisais Unreal Engine, et j’ai choisi de relever un défi 
+        technique : créer un scanner Lidar fonctionnel en Blueprint.
+      </p>
+
+      <div class="tags">
+        <span>Blueprint</span>
+        <span>Unreal</span>
+      </div>
+    </aside>
+
+    <!-- RIGHT -->
+    <main class="project-right">
+      <div class="preview-grid">
+        <div class="preview-video">
+          <video src="../assets/projects/scannerLidar/Discover.mp4" poster="../assets/banners/LidarScanner_Banner.png" 
+              controls preload="metadata" muted playsinline loop autoplay> 
+              Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+        </div>
+      </div>
+
+      <div class="contributions">
+        <div>
+          <h3>Mécanique Lidar</h3>
+            <p>
+              J'ai prototypé un scanner Lidar sous Unreal Engine : des rayons émis à 360° détectent les surfaces environnantes 
+              et génèrent un nuage de points en temps réel. L'occasion pour moi de découvrir les Blueprints, les Line Traces et les problématiques 
+              d'optimisation liées à la détection spatiale.
+            </p>
+        </div>
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>

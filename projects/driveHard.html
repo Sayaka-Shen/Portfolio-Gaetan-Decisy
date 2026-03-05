@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drive Hard 2099 - PC Game</title>
+    <script src="../js/project.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&family=Oxanium:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div id="customCursor"></div>
+  <div id="cursorTrail"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="project-layout">
+    <!-- LEFT -->
+    <aside class="project-left">
+      <a href="../index.html" class="back-btn">← Retour</a>
+
+      <span class="badge"><span>JEU VIDÉO</span></span>
+      <h1>Drive Hard 2099</h1>
+      <p class="subtitle">PC - First Person</p>
+
+      <div class="meta">
+        <div><span>MOTEUR</span><strong>Unreal Blueprint</strong></div>
+        <div><span>ÉQUIPE</span><strong>9</strong></div>
+        <div><span>DURÉE</span><strong>1 mois</strong></div>
+        <div><span>RÔLE</span><strong>Lead Game Programmer</strong></div>
+      </div>
+
+      <p class="description">
+        Bienvenue à Sunset City, le théâtre du tournoi annuel Drive Hard !
+        Des équipes de deux s’affrontent dans des matchs explosifs en 2 contre 2  l’un conduit, l’autre tire. Des objets et des armes disséminés dans l’arène 
+        viennent pimenter l’action, et seule l’équipe la plus impitoyable pourra dominer cette compétition à haut risque.
+        Que la meilleure équipe l’emporte !
+      </p>
+
+      <div class="tags">
+        <span>Blueprint</span>
+        <span>Unreal</span>
+      </div>
+
+      <div class="links">
+        <a href="https://github.com/Sayaka-Shen/DriveHard2099">GitHub</a>
+        <a href="https://charliebrv.itch.io/drive-hard-2099" class="primary">Voir la démo</a>
+      </div>
+    </aside>
+
+    <!-- RIGHT -->
+    <main class="project-right">
+      <div class="preview-grid">
+        <div class="preview-video">
+          <video src="../assets/projects/driveHard/DriveHard_Gameplay.mp4" poster="../assets/banners/DriveHardBanner.png" 
+              controls preload="metadata" muted playsinline loop autoplay> 
+              Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+        </div>
+        <div class="preview-video">
+          <video src="../assets/projects/driveHard/DriveHard_Objects.mp4" poster="../assets/banners/DriveHardBanner.png" 
+              controls preload="metadata" muted playsinline loop autoplay> 
+              Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+        </div>
+      </div>
+
+      <div class="contributions">
+        <div>
+          <h3>Multijoueurs / Système d'équipe</h3>
+            <p>
+                En pair programming, nous avons développé un multijoueur local en écran partagé jusqu'à 4 joueurs. Ainsi qu'un système de gestion des équipes qui 
+                s'occupe des rôles, des véhicules, du score, des respawns et d'un inventaire commun par équipe.
+            </p>
+        </div>
+        <div>
+            <h3>Objets / Inventaire</h3>
+            <p>
+                Chaque équipe dispose d'un inventaire partagé pouvant contenir 2 objets. Les deux joueurs de l'équipe y ont accès peu importe leur rôle, 
+                ce qui les force à se coordonner. Le système gère automatiquement la collecte, l'utilisation, les cooldowns et le remplacement des objets.
+            </p>
+        </div>
+         <div>
+            <h3>Gamefeel</h3>
+            <p>
+                Durant ce projet, j'ai aussi effectué plusieurs Gameplay Features comme les portails, les rivières, les arêtes à sens unique, les pièges à âmes 
+                et les mécaniques de prise et de purification d'une âme. Ce sont des mécaniques de gameplay principales qui permettent d'avancer à travers les niveaux du jeu.
+            </p>
+        </div>
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>

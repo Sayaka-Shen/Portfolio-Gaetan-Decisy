@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lebon Labrute et Donjuan - Narrative Game</title>
+    <script src="../js/project.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&family=Oxanium:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div id="customCursor"></div>
+  <div id="cursorTrail"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="project-layout">
+    <!-- LEFT -->
+    <aside class="project-left">
+      <a href="../index.html" class="back-btn">← Retour</a>
+
+      <span class="badge"><span>JEU VIDÉO</span></span>
+      <h1>Lebon Labrute et Donjuan</h1>
+      <p class="subtitle">PC - Narrative Game</p>
+
+      <div class="meta">
+        <div><span>MOTEUR</span><strong>Unity C#</strong></div>
+        <div><span>ÉQUIPE</span><strong>4</strong></div>
+        <div><span>DURÉE</span><strong>1 semaine</strong></div>
+        <div><span>RÔLE</span><strong>Game Programmer</strong></div>
+      </div>
+
+      <p class="description">
+        Levez-vous, brave écuyer ! Dans ce jeu narratif en point & click, vous incarnez un jeune écuyer durant un tournoi de joute médiévale. 
+        Votre mission ? Assister Sir Lebon, Sir Labrute et Sir DonJuan, pour mener le chevalier le plus valeureux vers la victoire !
+      </p>
+
+      <div class="tags">
+        <span>C#</span>
+        <span>Unity</span>
+      </div>
+
+      <div class="links">
+        <a href="https://github.com/Sayaka-Shen/LeBonLaBruteEtDonjuan">GitHub</a>
+        <a href="https://exalt-ryu.itch.io/lebon-labrute-et-donjuan" class="primary">Voir la démo</a>
+      </div>
+    </aside>
+
+    <!-- RIGHT -->
+    <main class="project-right">
+      <div class="preview-grid">
+        <div class="preview-video">
+          <video src="../assets/projects/bonBruteDonjuan/LeBonLaBruteDonjuan.mp4" poster="../assets/banners/BonBruteDonjuan_Banner.png" 
+              controls preload="metadata" muted playsinline loop autoplay> 
+              Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+        </div>
+      </div>
+
+      <div class="contributions">
+        <div>
+          <h3>Système de dialogue et interactions</h3>
+            <p>
+              J'ai conçu un système de dialogue complet : embranchements, réponses conditionnelles et réactions selon les choix du joueur, 
+              directement connecté à la progression narrative du jeu.
+            </p>
+        </div>
+        <div>
+            <h3>Tool pour les Dialogue</h3>
+            <p>
+              J'ai conçu un outil d'édition interne permettant au game designer d'intégrer les dialogues sans coder, via une interface personnalisée dans 
+              l'Inspector Unity connectée au système.
+            </p>
+        </div>
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>

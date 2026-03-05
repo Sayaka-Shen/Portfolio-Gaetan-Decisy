@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Undead Duet - Couch Game</title>
+    <script src="../js/project.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&family=Oxanium:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div id="customCursor"></div>
+  <div id="cursorTrail"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="project-layout">
+    <!-- LEFT -->
+    <aside class="project-left">
+      <a href="../index.html" class="back-btn">← Retour</a>
+
+      <span class="badge"><span>JEU VIDÉO</span></span>
+      <h1>The Undead Duet</h1>
+      <p class="subtitle">PC - Couch Game</p>
+
+      <div class="meta">
+        <div><span>MOTEUR</span><strong>Unreal C++</strong></div>
+        <div><span>ÉQUIPE</span><strong>16</strong></div>
+        <div><span>DURÉE</span><strong>3 mois</strong></div>
+        <div><span>RÔLE</span><strong>Lead Game Programmer</strong></div>
+      </div>
+
+      <p class="description">
+        The Undead Duet est un jeu de rythme cozy qui se joue en local à 2 joueurs. Vous devez jouer de la musique en combinant les notes et le pitch 
+        dans une forêt sinistre pour réanimer des squelettes. Le vieil homme veut que vous exploriez les environs et retrouviez ses amis disparus...
+        Incarnez un nécromancien et un chien fantôme, et redonnez vie à son hameau tristement silencieux. Allez-y ! Essayez de les retrouver !
+      </p>
+
+      <div class="tags">
+        <span>C++</span>
+        <span>Unreal</span>
+      </div>
+
+      <div class="links">
+        <a href="https://github.com/dorgui00/Pipoumancien">GitHub</a>
+        <a href="https://fleurf.itch.io/the-undead-duet" class="primary">Voir la démo</a>
+      </div>
+    </aside>
+
+    <!-- RIGHT -->
+    <main class="project-right">
+      <div class="preview-grid">
+        <div class="preview-video">
+          <video src="../assets/projects/theUndeadDuet/Trailer_The_Undead_Duet.mp4" poster="../assets/banners/TheUndeadDuet_Banner.gif" 
+                controls preload="metadata" muted playsinline loop autoplay> 
+                Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+        </div>  
+        <div class="preview-video">
+          <img src="../assets/projects/theUndeadDuet/mainMeca.gif" alt="GIF Mécanique de musique">
+        </div>
+      </div>
+
+      <div class="contributions">
+        <div>
+          <h3>Mécanique de la musique</h3>
+            <p>
+              En pair programming, j'ai conçu le système de musique, la mécanique principale du jeu. Nous avons d'abord schématisé le système sur Figma avant 
+              de l'implémenter en C++ sous Unreal Engine. Il repose sur des QTE synchronisés : les deux joueurs doivent agir au bon moment pour valider une note. 
+              Tout au long du projet, nous avons itéré sur les timings et la difficulté pour affiner la mécanique.
+            </p>
+        </div>
+        <div>
+            <h3>Multijoueurs / Architecture projet</h3>
+            <p>
+                J'ai réutilisé un système de multijoueur local développé lors d'un exercice précédent pour mettre rapidement en place la gestion des inputs et des joueurs. 
+                J'ai ensuite conçu la state machine et le système de déplacement, sur lesquels le système de QTE musical s'est intégré naturellement.
+            </p>
+        </div>
+         <div>
+            <h3>Gamefeel mécanique de la musique</h3>
+            <p>
+              En fin de projet, je me suis concentré sur le gamefeel en ajoutant des feedbacks visuels, sonores et animés. Une note réussie déclenche des retours positifs, 
+              une note ratée des retours clairs sans être frustrants. Ce travail a transformé une mécanique fonctionnelle en une expérience vraiment plaisante.
+            </p>
+        </div>
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>
