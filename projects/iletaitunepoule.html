@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Il était une poule - PC/Mobile Game</title>
+    <script src="../js/project.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&family=Oxanium:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/project.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div id="customCursor"></div>
+    <div id="cursorTrail"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="project-layout">
+      <!-- LEFT -->
+      <aside class="project-left">
+        <a href="../index.html#projects" class="back-btn reveal">← Retour</a>
+
+        <span class="badge reveal"><span>JEU VIDÉO</span></span>
+        <h1 class="reveal">Il était une poule</h1>
+        <p class="subtitle reveal">PC/Mobile - Expérience</p>
+
+        <div class="meta">
+          <div class="reveal"><span>MOTEUR</span><strong>Unity C#</strong></div>
+          <div class="reveal"><span>ÉQUIPE</span><strong>14</strong></div>
+          <div class="reveal"><span>DURÉE</span><strong>2 mois</strong></div>
+          <div class="reveal">
+            <span>RÔLE</span><strong>Lead Game Programmer</strong>
+          </div>
+        </div>
+
+        <p class="description reveal">
+          Il était une poule est une expérience réalisé pour l'association L214
+          éducations. L'objectif était de créer un projet pour un client voulant
+          sensibiliser les jeunes sur la consommation de viande. Ce projet s'est
+          effectué dans un cadre de stage de 2 mois au sein de l'agence Level
+          Up. L'expérience est en multijoueur, un accompagnateur lance la partie
+          sur grand écran et les joueurs rejoignent depuis leur téléphone. Vous
+          suivez l'histoire de Pouli la poule qui s'enfuit d'un abatoire et vous
+          l'aidez en resolvant des minis-jeux et en répondant à des choix.
+        </p>
+
+        <div class="tags reveal">
+          <span>C#</span>
+          <span>Unity</span>
+        </div>
+      </aside>
+
+      <!-- RIGHT -->
+      <main class="project-right">
+        <div class="preview-grid">
+          <div class="preview-video reveal">
+            <iframe
+              src="https://www.youtube.com/embed/hWYwnI57zQY?autoplay=1&mute=1&loop=1&playlist=hWYwnI57zQY"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="preview-video reveal">
+            <img
+              class=""
+              src="../assets/projects/iletaitunepoule/Minigame_race.gif"
+              alt="GIF mini jeu"
+            />
+          </div>
+        </div>
+
+        <div class="contributions reveal">
+          <div>
+            <h3>Architecture du projet</h3>
+            <p>
+              Durant ce projet, nous avons créé une architecture permettant de
+              construire les différentes scènes de l’histoire. Celle-ci se
+              découpe en séquences, avec plusieurs types de séquences possibles.
+              Une scène peut parfois être composée de plusieurs séquences
+              différentes : séquence de mini-jeu, séquence d’animation ou
+              séquence de dialogue.
+            </p>
+          </div>
+          <div>
+            <h3>Mini-Jeu</h3>
+            <p>
+              Pendant ce projet, j’ai développé l’un des mini-jeux que les
+              joueurs doivent réaliser pour aider Pouli. Dans ce mini-jeu, des
+              pattes d’animaux apparaissent à l’écran. Lorsque le joueur appuie
+              dessus, il gagne des points qui sont également ajoutés au score de
+              son équipe. Comme tous les autres mini-jeux, celui-ci a été conçu
+              pour être joué en multijoueur. J’ai donc dû mettre en place un
+              système permettant de répartir les joueurs en deux équipes.
+            </p>
+          </div>
+          <div>
+            <h3>Etudes des solutions techniques</h3>
+            <p>
+              Pendant ce projet, lorsque le client nous a apporté des précisions
+              sur les objectifs de l’expérience, j’ai réalisé, avec les autres
+              développeurs, des études sur les différentes solutions techniques
+              que nous pouvions apporter au projet et sur ce qu’il était
+              possible de réaliser dans le temps imparti.
+            </p>
+          </div>
+
+          <div>
+            <h3>Lead suppléant du projet</h3>
+            <p>
+              De plus, j’ai occupé tout au long du projet le rôle de lead projet
+              suppléant, afin de remplacer le lead lors de ses absences. Cela
+              m’a permis d’avoir une vision plus globale de la gestion d’un
+              projet, notamment en participant aux échanges avec les directeurs.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
